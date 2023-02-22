@@ -1,0 +1,116 @@
+.sidebar {
+  background-color: #2b303a;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover .icon {
+  color: #ff4545;
+}
+
+.menu-item:hover .name {
+  color: #ff4545;
+}
+
+.sidebar button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.sidebar button:hover {
+  background-color: transparent;
+  border: none;
+  color: #ff4545;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar.collapsed .name {
+  display: none;
+}
+
+.sidebar.collapsed .icon:hover {
+  color: #ff4545;
+}
+.sidebar.collapsed li:active {
+  color: #ff4545;
+}
+.sidebar.collapsed li {
+  margin-top: 20px;
+}
+
+.profileImageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+}
+
+.profileImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu-collapsed {
+  margin-top: 60px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.menu-item h3 {
+  margin-left: 20px;
+}
+.icon {
+  font-size: 25px;
+}
+
+.sidebar .link {
+  text-decoration: none;
+}
+
+.link.active .icon {
+  color: #ff4545;
+}
+
+.link.active .name {
+  color: #ff4545;
+}
